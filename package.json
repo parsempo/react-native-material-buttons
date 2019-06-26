@@ -19,11 +19,11 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/hhunaid/react-native-material-buttons.git"
+    "url": "git://github.com/parsempo/react-native-material-buttons.git"
   },
   "dependencies": {
     "prop-types": "^15.5.9",
-    "react-native-material-ripple": "https://github.com/hhunaid/react-native-material-ripple.git"
+    "react-native-material-ripple": "https://github.com/parsempo/react-native-material-ripple.git"
   },
   "peerDependencies": {
     "react": "*",
