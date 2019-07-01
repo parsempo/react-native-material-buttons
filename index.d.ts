@@ -34,5 +34,5 @@ declare module 'react-native-material-buttons' {
         disabledTitleColor?: string,
     }
 
-    export class TextButton<TextButtonProps> {}
+    export class TextButton extends React.PureComponent<TextButtonProps> {}
 }
