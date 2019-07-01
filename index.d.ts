@@ -1,6 +1,7 @@
-import { RippleProps } from "react-native-material-ripple";
-import { Animated, TextStyle } from 'react-native'
 declare module 'react-native-material-buttons' {
+    import { RippleProps } from "react-native-material-ripple";
+    import { Animated, TextStyle } from 'react-native';
+
     export interface ButtonProps extends RippleProps {
         color?: string,
         shadeColor?: string,
@@ -11,11 +12,11 @@ declare module 'react-native-material-buttons' {
         disabledColor?: string
     }
 
-    export class Button<ButtonProps> {}
+    export class Button extends React.PureComponent<ButtonProps> {}
 
     export interface RaisedButtonProps extends ButtonProps {}
 
-    export class RaisedButton<RaisedButtonProps> {}
+    export class RaisedButton extends React.PureComponent<RaisedButtonProps> {}
     
     export interface RaisedTextButtonProps extends RaisedButtonProps {
         title: string,
@@ -24,7 +25,7 @@ declare module 'react-native-material-buttons' {
         disabledTitleColor?: string,
     }
 
-    export class RaisedTextButton<RaisedTextButtonProps> {}
+    export class RaisedTextButton extends React.PureComponent<RaisedTextButtonProps> {}
 
     export interface TextButtonProps extends ButtonProps {
         title: string,
